@@ -1,7 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import {motion} from "framer-motion";
-import * as ReactDOMClient from "react-dom/client";
 
 
 
