@@ -15,11 +15,6 @@ import Start from "./Start";
 
 
 function App() {
-
-
-
-
-
     const backGround =
         <body className="w-screen h-[2000px] bg-gradient-to-bl from-slate-800 to-amber-100">
         <BrowserRouter>
@@ -41,7 +36,9 @@ function App() {
             <a href="Start.jsx" className="text-4xl text-amber-100 font-serif size-auto flex-auto">Ewan
                 Buchanan</a>
             <ul className=" font-serif fixed right-4 items-center px-4 text-3xl space-x-6">
-                <Link to="/AboutMe" className="hover:text-amber-300 fill-transparent text-amber-100">About Me</Link>
+                <Link to="/AboutMe" className="">
+                    <button className="hover:text-amber-300 fill-transparent text-amber-100">About Me</button>
+                </Link>
                  <a href="PreviousProjects.jsx" className="hover:text-amber-300 fill-transparent text-amber-100">Previous
                     Projects</a>
                 <a href="resume.jsx" className="hover:text-amber-300 fill-transparent text-amber-100">Resume</a>
@@ -50,19 +47,8 @@ function App() {
                     Me</a>
             </ul>
             <Outlet />
-
         </motion.nav>
         </BrowserRouter>
-        <div className="relative w-screen h-screen">
-        <div className="absolute top-20">
-            <p>I am</p>
-        </div>
-
-        <div className="absolute top-28">
-            <h2>Why I want to be a programmer?</h2>
-            <motion.p>I want to</motion.p>
-        </div>
-        </div>
         </body>
 
 
