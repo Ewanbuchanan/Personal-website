@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import {motion} from "framer-motion";
-import {Outlet, Link, BrowserRouter, Routes, Route} from "react-router-dom";
+import {Outlet, Link, Routes, Route, BrowserRouter} from "react-router-dom";
 import AboutMe from "./AboutMe";
 import ContactMe from "./ContactMe";
 import PreviousProjects from "./PreviousProjects";
@@ -16,7 +16,7 @@ import Start from "./Start";
 
 function App() {
     const backGround =
-        <body className="w-screen h-[2000px] bg-gradient-to-bl from-slate-800 to-amber-100">
+        <body className="w-screen h-screen bg-gradient-to-bl from-slate-800 to-amber-100">
         <BrowserRouter>
             <Routes>
                 <Route path="/App" element={<App />}/>
