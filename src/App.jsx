@@ -56,20 +56,19 @@ function App() {
         <div>
             <TypeAnimation
                 sequence={["I'm Ewan Buchanan", 1000,
-                    "I'm a Full Stack Developer", 1000,
-                    "I'm a Computer Science Student", 1000,
+                    "I'm a Full Stack Developer", 750,
+                    "I'm a Computer Science Student", 500,
+                    "I'm a Problem Solver", 750,
                     "I'm a Leader", 1000,
-                    "I'm a Team Player", 1000,
-                    "I'm a Problem Solver", 1000,
-                    "I'm a Life Long Learner", 1000]}
+                    "I'm a Life Long Learner", 750]}
                 wrapper="h2"
-                speed={50}
+                speed={70}
                 style={{fontSize: "5rem", color: "black", textAlign: "center", fontFamily: "serif"}}
                 repeat={Infinity}
                 className="absolute top-20 inset-0"/>
         </div>
-        <div>
-            <Slideshow/>
+        <div className="container inset-0 left-[50%]">
+            <Slideshow className="absolute inset-0 w-screen"/>
         </div>
         </body>
 

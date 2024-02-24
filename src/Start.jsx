@@ -12,6 +12,7 @@ import App from "./App";
 
 
 function start() {
+    const height = window.innerHeight
     const start =
         <body>
         <HashRouter>
@@ -27,18 +28,19 @@ function start() {
                 initial = {{backgroundColor: "black"}}
                 animate={{}}
 
-                className="flex h-screen w-screen items-center">
+                className="flex h-screen w-screen justify-center content-center items-center">
 
-                <svg className="w-screen h-screen overflow-visible static z-0">
-                    {Array.from({length: 10}, (_, i) => (
+                <svg className="absolute inset-0 w-screen h-screen overflow-visible  z-0">
+
+                    {Array.from({length: (height / 75)}, (_, i) => (
                         <motion.g
                             key={i}
                         >
-                            {Array.from({length: 21}, (_, j) => (
+                            {Array.from({length: height}, (_, j) => (
                                 <motion.rect
                                     key={j}
-                                    width="75"
-                                    height="75"
+                                    width={75}
+                                    height={75}
                                     rx="0"
                                     stroke="#0a0f1e"
                                     x={(j + 1) * 80 - 80} // Adjust spacing as needed
@@ -49,10 +51,9 @@ function start() {
                         </motion.g>
                     ))}
                 </svg>
-                <div className="container relative w-screen right-4 bottom-5
-                 h-screen items-center content-center
-                 justify-center max-w-screen max-h-3.5">
-                    <div className="absolute inset-0 right-24">
+                <div className="absolute
+                 h-screen top-[50%] left-[47%] max-w-25 max-h-3.5">
+                    <div className="">
                         <ul>
                 <Link to="/App" className="">
                     <motion.button
