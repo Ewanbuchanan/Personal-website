@@ -53,6 +53,11 @@ function App() {
                 <Outlet/>
             </motion.nav>
         </BrowserRouter>
+        <motion.div
+            initial={{opacity: 0}}
+            style={{border: 1}}
+            animate={{opacity: 1}}
+            transition={{duration: 2, ease: "easeIn"}}>>
         <div>
             <TypeAnimation
                 sequence={["I'm Ewan Buchanan", 2547, //2995
@@ -63,7 +68,7 @@ function App() {
                     "I'm a Life Long Learner", 2400]} //3855
                 wrapper="h2"
                 speed={60}
-                deletionSpeed={75}
+                deletionSpeed={80}
                 style={{fontSize: "5rem", color: "black", textAlign: "center", fontFamily: "serif"}}
                 repeat={Infinity}
                 className="absolute top-20 inset-0"/>
@@ -71,6 +76,7 @@ function App() {
         <div className="container inset-0 left-[50%]">
             <Slideshow className="absolute inset-0 w-screen"/>
         </div>
+        </motion.div>
         </body>
 
 
