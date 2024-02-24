@@ -1,4 +1,5 @@
 import React from "react";
+import ReactDOM from "react-dom/client";
 import {motion} from "framer-motion";
 import {Outlet, Routes, Route, BrowserRouter} from "react-router-dom";
 import AboutMe from "./AboutMe";
@@ -18,8 +19,8 @@ import Slideshow from "./Slide";
 
 
 function App() {
-
-        return <body className="w-screen h-screen bg-gradient-to-bl from-slate-800 to-amber-100">
+    const backGround =
+        <body className="w-screen h-screen bg-gradient-to-bl from-slate-800 to-amber-100">
         <BrowserRouter>
             <Routes>
                 <Route path="/App" element={<App/>}/>
@@ -77,6 +78,13 @@ function App() {
         </div>
         </motion.div>
         </body>
+
+
+    const root = ReactDOM.createRoot(document.getElementById('root'));
+    root.render(backGround);
+
+    return <body id="root">
+    </body>
 }
 
 export default App;
