@@ -55,14 +55,15 @@ function App() {
         </BrowserRouter>
         <div>
             <TypeAnimation
-                sequence={["I'm Ewan Buchanan", 1000,
-                    "I'm a Full Stack Developer", 750,
-                    "I'm a Computer Science Student", 500,
-                    "I'm a Problem Solver", 750,
-                    "I'm a Leader", 1000,
-                    "I'm a Life Long Learner", 750]}
+                sequence={["I'm Ewan Buchanan", 2547, //2995
+                    "I'm a Developer", 2707, //2200
+                    "I'm a Computer Science Student", 2000, //4040
+                    "I'm a Problem Solver", 2534, //2640
+                    "I'm a Leader", 2800, //1560
+                    "I'm a Life Long Learner", 2400]} //3855
                 wrapper="h2"
-                speed={70}
+                speed={60}
+                deletionSpeed={75}
                 style={{fontSize: "5rem", color: "black", textAlign: "center", fontFamily: "serif"}}
                 repeat={Infinity}
                 className="absolute top-20 inset-0"/>

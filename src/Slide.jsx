@@ -18,7 +18,7 @@ const Slideshow = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setIndex((prevIndex) => (prevIndex + 1) % slides.length);
-    }, 1900); // Change slide every 3 seconds
+    }, 3450); // Change slide every 3 seconds
 
     return () => clearInterval(interval);
   }, []);
@@ -30,11 +30,11 @@ const Slideshow = () => {
           src={slides[index]}
           alt="slide"
           className="absolute h-[50%] w-[50%] justify-center size-[60%] bg-gradient-to-bl
-           from-blue-900 to-white translate-y-[50%] translate-x-[50%] rounded object-scale-down"
+           from-blue-900 border-4 border-blue-900 to-white translate-y-[50%] translate-x-[50%] rounded object-scale-down"
           initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
+          animate={{ opacity: 1}}
           exit={{ opacity: 0 }}
-          transition={{ duration: 1 }}
+          transition={{}}
         />
       </AnimatePresence>
   );
