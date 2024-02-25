@@ -2,7 +2,7 @@ import {BrowserRouter, Link, Outlet, Route, Routes} from "react-router-dom";
 import AboutMe from "../Pages/AboutMe";
 import ContactMe from "../Pages/ContactMe";
 import PreviousProjects from "../PreviousProjects";
-import Resume from "../Pages/resume";
+import Resume from "../Pages/Resume";
 import Socials from "../Pages/Socials";
 import Start from "../Pages/Start";
 import {motion} from "framer-motion";
@@ -34,7 +34,7 @@ function NavBar(){
             </Link>
             <a href="../Pages/Start.jsx" className="hover:text-amber-300 fill-transparent text-amber-100">Previous
                 Projects</a>
-            <a href="../Pages/resume.jsx" className="hover:text-amber-300 fill-transparent text-amber-100">Resume</a>
+            <a href="../Pages/Resume.jsx" className="hover:text-amber-300 fill-transparent text-amber-100">Resume</a>
             <a href="../Pages/Socials.jsx" className="hover:text-amber-300 fill-transparent text-amber-100">Socials</a>
             <a href="../Pages/ContactMe.jsx" className="hover:text-amber-300 fill-transparent text-amber-100">Contact
                 Me</a>
