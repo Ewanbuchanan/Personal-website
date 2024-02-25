@@ -1,13 +1,13 @@
 import {BrowserRouter, Link, Outlet, Route, Routes} from "react-router-dom";
-import AboutMe from "./AboutMe";
-import ContactMe from "./ContactMe";
-import PreviousProjects from "./PreviousProjects";
-import Resume from "./resume";
-import Socials from "./Socials";
-import Start from "./Start";
+import AboutMe from "../Pages/AboutMe";
+import ContactMe from "../Pages/ContactMe";
+import PreviousProjects from "../PreviousProjects";
+import Resume from "../Pages/resume";
+import Socials from "../Pages/Socials";
+import Start from "../Pages/Start";
 import {motion} from "framer-motion";
 import React from "react";
-import App from "./App";
+import App from "../Pages/App";
 
 function NavBar(){
     return <div><BrowserRouter>
@@ -26,17 +26,17 @@ function NavBar(){
                 transition={{duration: 1, ease: "easeIn"}}
                 className="flex items-center justify-between
                     bg-fixed border-6 flex-wrap border-black bg-slate-800 p-6 m-auto w-screen op fixed">
-        <a href="Start.jsx" className="text-4xl text-amber-100 font-serif size-auto flex-auto">Ewan
+        <a href="../Pages/Start.jsx" className="text-4xl text-amber-100 font-serif size-auto flex-auto">Ewan
             Buchanan</a>
         <ul className=" font-serif bg fixed right-4 items-center px-4 text-3xl space-x-6">
             <Link to="AboutMe.jsx" className="">
                 <button className="hover:text-amber-300 fill-transparent text-amber-100">About Me</button>
             </Link>
-            <a href="Start.jsx" className="hover:text-amber-300 fill-transparent text-amber-100">Previous
+            <a href="../Pages/Start.jsx" className="hover:text-amber-300 fill-transparent text-amber-100">Previous
                 Projects</a>
-            <a href="resume.jsx" className="hover:text-amber-300 fill-transparent text-amber-100">Resume</a>
-            <a href="Socials.jsx" className="hover:text-amber-300 fill-transparent text-amber-100">Socials</a>
-            <a href="ContactMe.jsx" className="hover:text-amber-300 fill-transparent text-amber-100">Contact
+            <a href="../Pages/resume.jsx" className="hover:text-amber-300 fill-transparent text-amber-100">Resume</a>
+            <a href="../Pages/Socials.jsx" className="hover:text-amber-300 fill-transparent text-amber-100">Socials</a>
+            <a href="../Pages/ContactMe.jsx" className="hover:text-amber-300 fill-transparent text-amber-100">Contact
                 Me</a>
         </ul>
         <Outlet/>

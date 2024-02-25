@@ -1,38 +1,18 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
+import './Components/index.css';
 import reportWebVitals from './reportWebVitals';
-import {BrowserRouter, Route, Routes} from "react-router-dom";
-import AboutMe from "./AboutMe";
-import ContactMe from "./ContactMe";
-import PreviousProjects from "./PreviousProjects";
-import Resume from "./resume";
-import Socials from "./Socials";
-import Start from "./Start";
+import {HelmetProvider} from "react-helmet-async";
+import Main from "./Main";
 
-
-
-
-    const root = ReactDOM.createRoot(document.getElementById('root'));
-    root.render(
+const root = ReactDOM.createRoot(document.getElementById('root'))
+root.render(
         <React.StrictMode>
-            <React.Fragment>
-                <title>Ewan Buchanan</title>
-            </React.Fragment>
-        <BrowserRouter>
-            <Routes>
-                <Route path="/App" element={<App />}/>
-                <Route path="/AboutMe" element={<AboutMe />}/>
-                <Route path="/ContactMe" element={<ContactMe />} />
-                <Route path="/PreviousProjects" element={<PreviousProjects />} />
-                <Route path="/resume" element={<Resume />} />
-                <Route path="/Socials" element={<Socials />} />
-                <Route path="/Start" element={<Start />} />
-            </Routes>
-        </BrowserRouter>
-        <Start />
-    </React.StrictMode>, document.getElementById('root'));
+            <HelmetProvider>
+                <Main />
+            </HelmetProvider>
+    </React.StrictMode>);
+
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))

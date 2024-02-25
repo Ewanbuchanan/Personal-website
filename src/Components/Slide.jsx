@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import programmer from "./Photos/Software-developer.jpg";
-import learner from "./Photos/IMG_1919.jpg";
-import ubc from "./Photos/CS logo narrow 2020-07-29_12-16-18.jpg";
-import leader from "./Photos/IMG_0125.jpg";
-import ewan from "./Photos/IMG_3649.PNG";
-import llearner from "./Photos/IMG_4037.jpg";
+import programmer from "../Photos/Software-developer.jpg";
+import learner from "../Photos/IMG_1919.jpg";
+import ubc from "../Photos/CS logo narrow 2020-07-29_12-16-18.jpg";
+import leader from "../Photos/IMG_0125.jpg";
+import ewan from "../Photos/IMG_3649.PNG";
+import llearner from "../Photos/IMG_4037.jpg";
 
 
 const slides = [
