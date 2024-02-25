@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import {motion} from "framer-motion";
-import {Outlet, Routes, Route, BrowserRouter} from "react-router-dom";
+import {Outlet, Routes, Route, BrowserRouter, Link} from "react-router-dom";
 import AboutMe from "./AboutMe";
 import ContactMe from "./ContactMe";
 import PreviousProjects from "./PreviousProjects";
@@ -40,9 +40,9 @@ function App() {
                 <a href="Start.jsx" className="text-4xl text-amber-100 font-serif size-auto flex-auto">Ewan
                     Buchanan</a>
                 <ul className=" font-serif bg fixed right-4 items-center px-4 text-3xl space-x-6">
-                    <a href="AboutMe.jsx" className="">
+                    <Link to={"/AboutMe"} className="">
                         <button className="hover:text-amber-300 fill-transparent text-amber-100">About Me</button>
-                    </a>
+                    </Link>
                     <a href="Start.jsx" className="hover:text-amber-300 fill-transparent text-amber-100">Previous
                         Projects</a>
                     <a href="resume.jsx" className="hover:text-amber-300 fill-transparent text-amber-100">Resume</a>
