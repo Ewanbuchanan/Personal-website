@@ -14,7 +14,6 @@ import aboutMe from "./AboutMe";
 
 
 export default function App() {
-
     return <body className="w-screen h-screen bg-gradient-to-bl from-slate-800 to-amber-100">
         <Helmet>
             <title>Home</title>
