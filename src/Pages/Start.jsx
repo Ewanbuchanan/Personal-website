@@ -1,6 +1,7 @@
 import React from "react";
 import {motion} from "framer-motion";
 import {Helmet} from "react-helmet-async";
+import {Link} from "react-router-dom";
 
 
 
@@ -45,13 +46,13 @@ function Start() {
                  h-screen top-[50%] left-[47%] max-w-25 max-h-3.5">
                     <div className="">
 
-                <a href={"/App"}>
+                <Link to="/App">
                     <motion.button
                         whileHover={{scale: 1.1 }}
                         className="text-amber-100 font-bold font-serif
                      border border-amber-100 hover:bg-gradient-to-bl
                       from-green-500 to-cyan-950 text-2xl rounded-md">Meet me</motion.button>
-                </a>
+                </Link>
                         </div>
                 </div>
             </motion.body>

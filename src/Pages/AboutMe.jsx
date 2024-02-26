@@ -1,7 +1,7 @@
 
 import React from "react";
-import {Navbar} from "flowbite-react";
 import {Helmet} from "react-helmet-async";
+import NaviBar from "../Components/NaviBar";
 
 function AboutMe(){
     return (<>
@@ -11,7 +11,7 @@ function AboutMe(){
             <link rel="canonical" href="/AboutMe" />
         </Helmet>
         <body className="w-screen h-screen bg-black">
-    <Navbar />
+    <NaviBar />
     </body> </>);
 }
 
