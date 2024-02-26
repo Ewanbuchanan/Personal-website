@@ -11,7 +11,7 @@ function Start() {
         <Helmet>
             <title>Ewan Buchanan</title>
             <meta name="description" content="Software Engineer" />
-            <link rel="canonical" href="/src/Pages/Start.jsx" />
+            <link rel="canonical" href="/Start" />
         </Helmet>
             <motion.body
                 initial = {{backgroundColor: "black"}}

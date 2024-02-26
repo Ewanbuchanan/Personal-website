@@ -33,7 +33,7 @@ export default function App() {
                     <a href={aboutMe} className="">
                         <button className="hover:text-amber-300 fill-transparent text-amber-100">About Me</button>
                     </a>
-                    <a href="../PreviousProjects.jsx" className="hover:text-amber-300 fill-transparent text-amber-100">Previous
+                    <a href="PreviousProjects.jsx" className="hover:text-amber-300 fill-transparent text-amber-100">Previous
                         Projects</a>
                     <a href="Resume.jsx" className="hover:text-amber-300 fill-transparent text-amber-100">Resume</a>
                     <a href="Socials.jsx" className="hover:text-amber-300 fill-transparent text-amber-100">Socials</a>

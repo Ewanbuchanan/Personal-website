@@ -3,7 +3,7 @@ import {BrowserRouter, Route, Routes} from "react-router-dom";
 import Start from "./Pages/Start";
 import AboutMe from "./Pages/AboutMe";
 import ContactMe from "./Pages/ContactMe";
-import PreviousProjects from "./PreviousProjects";
+import PreviousProjects from "./Pages/PreviousProjects";
 import Resume from "./Pages/Resume";
 import Socials from "./Pages/Socials";
 import App from "./Pages/App";
