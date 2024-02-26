@@ -21,7 +21,7 @@ function Start() {
                 className="flex h-screen w-screen justify-center content-center items-center">
 
                 <svg className="absolute inset-0 w-screen h-screen overflow-visible  z-0">
-                    <h1 className="text-transparent">Ewan Buchanan Website</h1>
+                    <h1 className="hidden">Ewan Buchanan Start Website</h1>
 
                     {Array.from({length: (height / 75)}, (_, i) => (
                         <motion.g

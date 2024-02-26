@@ -10,7 +10,10 @@ function ContactMe() {
             <link rel="canonical" href="/ContactMe" />
         </Helmet>
         <body className="w-screen h-screen bg-black">
-        <NaviBar />
-        </body> </>);
+        <h1 className="hidden">Contact Me Page Ewan Buchanan</h1>
+        <NaviBar/>
+        </body>
+    </>);
 }
+
 export default ContactMe;

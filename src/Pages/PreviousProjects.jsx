@@ -10,7 +10,10 @@ function PreviousProjects() {
             <link rel="canonical" href="/PreviousProjects" />
         </Helmet>
         <body className="w-screen h-screen bg-black">
-        <NaviBar />
-        </body> </>);
+        <h1 className="hidden">Previous Works Page Ewan Buchanan</h1>
+        <NaviBar/>
+        </body>
+    </>);
 }
+
 export default PreviousProjects

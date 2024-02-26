@@ -7,9 +7,8 @@ import leader from "../Photos/IMG_0125.jpg";
 import ewan from "../Photos/IMG_3649.PNG";
 import llearner from "../Photos/IMG_4037.jpg";
 
-
 const slides = [
-  ewan, programmer, ubc, learner, leader, llearner
+  ewan, programmer, ubc, learner, leader, llearner,
 ];
 
 const Slideshow = () => {
@@ -29,6 +28,8 @@ const Slideshow = () => {
           key={index}
           src={slides[index]}
           alt="slide"
+          width={4000}
+          height={4000}
           className="absolute h-[50%] w-[50%] justify-center size-[60%] bg-gradient-to-bl
            from-blue-900 border-4 border-blue-900 to-white translate-y-[50%] translate-x-[50%] rounded object-scale-down"
           initial={{ opacity: 0 }}

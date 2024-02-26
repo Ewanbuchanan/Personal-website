@@ -11,8 +11,10 @@ function AboutMe(){
             <link rel="canonical" href="/AboutMe" />
         </Helmet>
         <body className="w-screen h-screen bg-black">
-    <NaviBar />
-    </body> </>);
+        <h1 className="hidden">About Me Page Ewan Buchanan</h1>
+        <NaviBar/>
+        </body>
+    </>);
 }
 
 export default AboutMe;

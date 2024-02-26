@@ -20,6 +20,7 @@ export default function App() {
             <meta name="description" content="Home Page" />
             <link rel="canonical" href="/App" />
         </Helmet>
+        <h1 className="hidden">App Main Page Ewan Buchanan</h1>
             <NaviBar />
         <motion.div
             initial={{opacity: 0}}
