@@ -9,11 +9,11 @@ function NaviBar(){
                 animate={{opacity: 1}}
                 transition={{duration: 1, ease: "easeIn"}}
                 className="flex items-center justify-between
-                    bg-fixed border-6 flex-wrap border-black bg-[#3a5a40] p-6 m-auto w-screen op fixed">
+                    bg-fixed border-6 sm:shrink-0 sm:p-1 flex-wrap border-black bg-transparent p-6 m-auto w-screen op fixed">
         <Link to="/App">
-            <button className="text-4xl hover:text-amber-300 text-[#dad7cd] font-serif size-auto flex-auto">Ewan Buchanan</button>
+            <button className="lg:text-4xl md:2xl sm:shrink-0 hover:text-amber-300 sm:text-1xl text-[#dad7cd] font-serif  ">Ewan Buchanan</button>
         </Link>
-        <div className=" font-serif bg fixed right-4 items-center px-4 text-3xl space-x-6">
+        <div className=" font-serif bg fixed right-4 items-center px-4 lg:text-3xl sm:text-1xl space-x-6">
             <Link to="/AboutMe">
                 <button className="hover:text-amber-300 fill-transparent text-[#dad7cd]">About Me</button>
             </Link>
