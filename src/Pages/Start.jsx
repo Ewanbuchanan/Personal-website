@@ -14,48 +14,48 @@ function Start() {
             <meta name="description" content="Software Engineer" />
             <link rel="canonical" href="/Start" />
         </Helmet>
-            <motion.body
-                initial = {{backgroundColor: "black"}}
-                animate={{}}
+        <motion.body
+            initial={{backgroundColor: "black"}}
+            animate={{}}
 
-                className="flex h-screen w-screen justify-center content-center items-center">
+            className="flex h-screen w-screen justify-center content-center items-center">
 
-                <svg className="absolute inset-0 w-screen h-screen overflow-visible  z-0">
-                    <h1 className="hidden">Ewan Buchanan Start Website</h1>
+            <svg className="absolute inset-0 w-screen h-screen overflow-visible  z-0">
+                <h1 className="hidden">Ewan Buchanan Start Website</h1>
 
-                    {Array.from({length: (height / 75)}, (_, i) => (
-                        <motion.g
-                            key={i}
-                        >
-                            {Array.from({length: height}, (_, j) => (
-                                <motion.rect
-                                    key={j}
-                                    width={75}
-                                    height={75}
-                                    rx="0"
-                                    stroke="#0a0f1e"
-                                    x={(j + 1) * 80 - 80} // Adjust spacing as needed
-                                    y={(i + 1) * 80 - 80} // Adjust spacing as needed
-                                    whileHover={{stroke: "#FFF", scale: 1.1, rx: 5}}
-                                />
-                            ))}
-                        </motion.g>
-                    ))}
-                </svg>
-                <div className="absolute
-                 h-screen top-[50%] left-[47%] max-w-25 max-h-3.5">
-                    <div className="">
-
-                <Link to="/App">
-                    <motion.button
-                        whileHover={{scale: 1.1 }}
-                        className="text-amber-100 font-bold font-serif
-                     border border-amber-100 hover:bg-gradient-to-bl
-                      from-green-500 to-cyan-950 text-2xl rounded-md">Meet me</motion.button>
-                </Link>
-                        </div>
+                {Array.from({length: (height / 75) + 1}, (_, i) => (
+                    <motion.g
+                        key={i}
+                    >
+                        {Array.from({length: height + 1}, (_, j) => (
+                            <motion.rect
+                                key={j}
+                                width={75}
+                                height={75}
+                                rx="0"
+                                stroke="#0a0f1e"
+                                x={(j + 1) * 80 - 80} // Adjust spacing as needed
+                                y={(i + 1) * 80 - 80} // Adjust spacing as needed
+                                whileHover={{stroke: "#FFF", scale: 1.1, rx: 5}}
+                            />
+                        ))}
+                    </motion.g>
+                ))}
+            </svg>
+            <div className="relative flex items-center w-screen h-screen max-h-3.5 max-w-32">
+                        <Link to="/App">
+                            <motion.button
+                                whileHover={{scale: 1.1}}
+                                className="absolute max-h-10 right-[-50%]
+                  items-center text-amber-100 top-[50%]
+                   ml-[-50px]
+                   left-[50%]  font-bold font-serif
+                     border border-amber-100 bg-black hover:bg-gradient-to-bl
+                      from-green-500 to-cyan-950 justify-center align-middle text-2xl rounded-md">Meet me
+                            </motion.button>
+                        </Link>
                 </div>
-            </motion.body>
+        </motion.body>
         </body>
 }
 
