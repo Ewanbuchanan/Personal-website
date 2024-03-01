@@ -46,10 +46,10 @@ function Start() {
                         <Link to="/App">
                             <motion.button
                                 whileHover={{scale: 1.1}}
-                                className="absolute max-h-10 right-[-50%]
+                                className="absolute max-h-10
                   items-center text-amber-100 top-[50%]
-                   ml-[-50px]
-                   left-[50%]  font-bold font-serif
+                     mt-[-50px]
+                   left-[50%] ml-[-54px]  font-bold font-serif
                      border border-amber-100 bg-black hover:bg-gradient-to-bl
                       from-green-500 to-cyan-950 justify-center align-middle text-2xl rounded-md">Meet me
                             </motion.button>
