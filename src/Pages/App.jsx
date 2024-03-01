@@ -4,6 +4,7 @@ import {TypeAnimation} from "react-type-animation";
 import Slideshow from "../Components/Slide";
 import {Helmet} from "react-helmet-async";
 import NaviBar from "../Components/NaviBar";
+import MobileNavBar from "../Components/MobileNavBar";
 
 
 
@@ -21,7 +22,7 @@ export default function App() {
             <link rel="canonical" href="/App" />
         </Helmet>
         <h1 className="hidden">App Main Page Ewan Buchanan</h1>
-            <NaviBar />
+            <MobileNavBar className="left-[50%] w-screen h-screen"/>
         <motion.div
             initial={{opacity: 0}}
             style={{border: 1}}
