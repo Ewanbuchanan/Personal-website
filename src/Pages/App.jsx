@@ -10,6 +10,7 @@ import leader from "../Photos/IMG_0125.jpg";
 import ewan from "../Photos/IMG_3649.PNG";
 import llearner from "../Photos/IMG_4037.jpg";
 import Slideshow from "../Components/Slide";
+import MobileNavBar from "../Components/MobileNavBar";
 
 
 
@@ -31,13 +32,17 @@ export default function App() {
         <div className="hidden xl:block">
             <NaviBar />
         </div>
+
+        <div className="absolute xl:hidden top-50  sm:block">
+            <MobileNavBar /> </div>
+
         <motion.div
             initial={{opacity: 0}}
             style={{border: 1}}
             animate={{opacity: 1}}
             transition={{duration: 2, ease: "easeIn"}}
             className="bg-gradient-to-b  w-full h-full from-green-950 to-black">
-        <div>
+        <div className="h-auto w-auto top-auto">
             <TypeAnimation
                 sequence={["I'm Ewan Buchanan", 2547, //2995
                     "I'm a Developer", 2707, //2200
