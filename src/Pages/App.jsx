@@ -9,6 +9,9 @@ import ubc from "../Photos/CS logo narrow 2020-07-29_12-16-18.jpg";
 import leader from "../Photos/IMG_0125.jpg";
 import ewan from "../Photos/IMG_3649.PNG";
 import llearner from "../Photos/IMG_4037.jpg";
+import jassy from "../Photos/instc 2023-10-04 025911.615.jpg";
+import me from "../Photos/IMG_4734.jpg";
+import paint from "../Photos/IMG_5264.png";
 import Slideshow from "../Components/Slide";
 import MobileNavBar from "../Components/MobileNavBar";
 
@@ -32,7 +35,6 @@ export default function App() {
         <div className="hidden xl:block">
             <NaviBar />
         </div>
-
         <div className="absolute xl:hidden top-50  sm:block">
             <MobileNavBar /> </div>
 
@@ -66,26 +68,26 @@ export default function App() {
                             height={200}
                             transition={{duration: 1, ease: "linear", delay: 0}}
                             className="absolute top-[30%] inset-0"></motion.img>
-                <motion.img src={ewan} title="Programmer"
+                <motion.img src={ewan} title="Ewan"
                             initial={{opacity: 0, left: -200}}
                             animate={{opacity: 1, left: 290}}
                             width={362}
                             height={250}
                             transition={{duration: 1, ease: "linear", delay: 0.2}}
                             className="absolute top-[30%] inset-0"></motion.img>
-                <motion.img src={learner} title="Programmer"
+                <motion.img src={learner} title="Learner"
                             initial={{opacity: 0, left: -200}}
                             animate={{opacity: 1, left: 0}}
                             width={290}
                             height={100}
                             transition={{duration: 1, ease: "linear", delay: 0.4}}
                             className="absolute py-[180px] inset-0 top-[30%] "></motion.img>
-                <motion.img src={ubc} title="Programmer"
+                <motion.img src={ubc} title="UBC"
                             initial={{opacity: 0, left: -200}}
                             animate={{opacity: 1, left: 653}}
                             width={600}
                             height={400}
-                            transition={{duration: 1, ease: "linear",  delay: 0.6}}
+                            transition={{duration: 1, ease: "linear", delay: 0.6}}
                             className="absolute object-cover inset-0 py-[422px] top-[30%] "></motion.img>
                 <motion.img src={leader} title="Programmer"
                             initial={{opacity: 0, left: -200}}
@@ -94,13 +96,34 @@ export default function App() {
                             height={400}
                             transition={{duration: 1, ease: "linear", delay: 0.8}}
                             className="absolute inset-0 overflow-clip object-contain top-[30%] "></motion.img>
-                <motion.img src={llearner} title="Programmer"
+                <motion.img src={llearner} title="llearner"
                             initial={{opacity: 0, left: -200}}
                             animate={{opacity: 1, left: 1210}}
                             width={285}
                             height={400}
                             transition={{duration: 1, ease: "linear", delay: 1}}
                             className="absolute overflow-clip object-contain top-[30%] "></motion.img>
+                <motion.img src={jassy} title="jassy"
+                            initial={{opacity: 0, left: -200}}
+                            animate={{opacity: 1, left: 1240}}
+                            width={285}
+                            height={400}
+                            transition={{duration: 1, ease: "linear", delay: 1}}
+                            className="absolute overflow-clip py-[415px] object-contain top-[30%] "></motion.img>
+                <motion.img src={me} title="me"
+                            initial={{opacity: 0, left: -200}}
+                            animate={{opacity: 1, left: 1498}}
+                            width={300}
+                            height={400}
+                            transition={{duration: 1, ease: "linear", delay: 1}}
+                            className="absolute overflow-clip object-contain top-[30%] "></motion.img>
+                <motion.img src={paint} title="paint"
+                            initial={{opacity: 0, left: -200}}
+                            animate={{opacity: 1, left: 1498}}
+                            width={300}
+                            height={400}
+                            transition={{duration: 1, ease: "linear", delay: 1}}
+                            className="absolute py-[320px] overflow-clip object-contain top-[30%] "></motion.img>
 
             </div>
         </motion.div>
